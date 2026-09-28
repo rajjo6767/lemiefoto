@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleria Fotografica Estetica</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fafafa;
+            color: #262626;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid #dbdbdb;
+            background: #ffffff;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            color: #333;
+        }
+
+        header p {
+            color: #8e8e8e;
+            margin-top: 5px;
+            font-size: 1rem;
+        }
+
+        /* Griglia Responsive stile Pinterest/Instagram */
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .gallery-item {
+            background: #ffffff;
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            display: block;
+            transition: filter 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            filter: brightness(0.95);
+        }
+
+        .image-info {
+            padding: 15px;
+            background: #fff;
+            font-size: 0.9rem;
+            border-top: 1px solid #fafafa;
+        }
+
+        .image-info .tag {
+            display: inline-block;
+            background: #f0f0f0;
+            color: #666;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            margin-top: 5px;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px 0;
+            color: #a0a0a0;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Foot Aesthetic Gallery</h1>
+        <p>Una raccolta curata di fotografia stock ed estetica</p>
+    </header>
+
+    <main class="gallery-container">
+        
+        <!-- Foto 1 -->
+        <div class="gallery-item">
+            <img src="https://unsplash.com" alt="Piedi sulla spiaggia">
+            <div class="image-info">
+                <strong>Spiaggia & Relax</strong><br>
+                <span class="tag">#barefoot</span> <span class="tag">#sea</span>
+            </div>
+        </div>
+
+        <!-- Foto 2 -->
+        <div class="gallery-item">
+            <img src="https://unsplash.com" alt="Piedi con sandali eleganti">
+            <div class="image-info">
+                <strong>Moda e Sandali</strong><br>
+                <span class="tag">#sandals</span> <span class="tag">#fashion</span>
+            </div>
+        </div>
+
+        <!-- Foto 3 -->
+        <div class="gallery-item">
+            <img src="https://unsplash.com" alt="Soles aesthetic">
+            <div class="image-info">
+                <strong>Pedicure & Cura</strong><br>
+                <span class="tag">#pedicure</span> <span class="tag">#wellness</span>
+            </div>
+        </div>
+
+        <!-- Foto 4 -->
+        <div class="gallery-item">
+            <img src="https://unsplash.com" alt="Piedi sul prato">
+            <div class="image-info">
+                <strong>A contatto con la Natura</strong><br>
+                <span class="tag">#nature</span> <span class="tag">#grass</span>
+            </div>
+        </div>
+
+        <!-- Foto 5 -->
+        <div class="gallery-item">
+            <img src="https://unsplash.com" alt="Dettaglio smalto e scarpe">
+            <div class="image-info">
+                <strong>Dettagli Urban</strong><br>
+                <span class="tag">#style</span> <span class="tag">#feet</span>
+            </div>
+        </div>
+
+        <!-- Foto 6 -->
+        <div class="gallery-item">
+            <img src="https://unsplash.com" alt="Piedi nel letto al mattino">
+            <div class="image-info">
+                <strong>Cozzy Morning</strong><br>
+                <span class="tag">#bed</span> <span class="tag">#aesthetic</span>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Foot Aesthetic Gallery - Immagini libere da copyright caricate via Unsplash API.</p>
+    </footer>
+
+</body>
+</html>
